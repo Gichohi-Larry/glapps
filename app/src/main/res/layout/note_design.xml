@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/REMOVE_BUTTON_NOTE_DESIGN"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/remove_icon" />
+
+    <LinearLayout
+        android:id="@+id/NOTE_LAYOUT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/note_layout_background"
+
+        android:layout_weight="1"
+        android:gravity="end"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/TITLE_TEXTVIEW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@string/font1"
+            android:inputType="text"
+            android:textColor="@color/dark_grey"
+            android:text="title"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/BODY_TEXT_VIEW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@string/font1"
+            android:inputType="text"
+            android:text="body"
+            android:textColor="@color/dark_grey"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
